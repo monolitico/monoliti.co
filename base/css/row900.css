@@ -1,0 +1,75 @@
+
+/* VERSION 2.0 */
+
+/* GLOBAL RESET */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,
+del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,
+caption,tbody,tfoot,thead,tr,th,td {border: 0; margin: 0; padding: 0;}
+
+article,aside,figure,figure img,figcaption,
+hgroup,footer,header,nav,section,video,object {display: block;}
+
+a img		{border: 0;}
+figure		{position: relative;}
+figure img	{width: 100%;}
+*:focus		{outline: 0;}
+
+/* ROW900 GENERAL SETTINGS */
+.ROW900	{
+	font-family: sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	}
+
+.COL900, .COL800, .COL700, .COL600, .COL500, .COL450, 
+.COL400, .COL300, .COL225, .COL200, .COL100 {
+	min-height: 1px;
+	margin-left: 10px;
+	word-break: break-word;
+	display: inline-flex;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	float: left;
+	}
+
+/* STANDARD COLUMNS SIZES*/
+.ROW900 {width: 90%;}
+.COL900 {width: calc(99.99% - 19.99px);}
+.COL800 {width: calc(88.88% - 18.88px);}
+.COL700 {width: calc(77.77% - 17.77px);}
+.COL600 {width: calc(66.66% - 16.66px);}
+.COL500 {width: calc(55.55% - 15.55px);}
+.COL400 {width: calc(44.44% - 14.44px);}
+.COL300 {width: calc(33.33% - 13.33px);}
+.COL200 {width: calc(22.22% - 12.22px);}
+.COL100 {width: calc(11.11% - 11.11px);}
+.COL450 {width: calc(50% - 15px);}
+.COL225 {width: calc(25% - 12.5px);}
+
+/* THE CLASS “DEMONSTRATION” CAN BE DELETED */
+.DEMONSTRATION {
+	min-height: 50px;
+	/*margin-top: 10px;*/
+	display: inline-flex;
+	/*text-align: center;*/
+	/*justify-content: center;*/
+	/*align-items: center;*/
+	background: lightpink;
+	background: transparent;
+	}
+
+.MOBILE-ONLY 	{display: none;}
+.DESKTOP-ONLY	{display: inline-flex;}
+
+/* SCREEN SIZE 1PX TO 768PX — MOBILE DEVICE */
+@media only screen and (min-width: 1px) and (max-width: 768px) {
+
+.ROW900 		{width: 100%;}
+.MOBILE-EXPAND	{width: 100%; margin-left: 0px;}
+.MOBILE-ONLY 	{display: inline-flex;}
+.DESKTOP-ONLY	{display: none;}
+
+}
