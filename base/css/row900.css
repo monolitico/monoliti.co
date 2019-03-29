@@ -1,5 +1,4 @@
-
-/* VERSION 2.0 */
+﻿
 
 /* GLOBAL RESET */
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,
@@ -16,60 +15,97 @@ figure img	{width: 100%;}
 
 /* ROW900 GENERAL SETTINGS */
 .ROW900	{
-	font-family: sans-serif;
-	margin-left: auto;
-	margin-right: auto;
-	overflow: auto;
-	overflow-y: hidden;
-	overflow-x: hidden;
-	}
+		margin-left: auto;
+		margin-right: auto;
+		overflow: auto;
+		overflow-y: hidden;
+		}
 
-.COL900, .COL800, .COL700, .COL600, .COL500, .COL450, 
-.COL400, .COL300, .COL225, .COL200, .COL100 {
-	min-height: 1px;
-	margin-left: 10px;
-	word-break: break-word;
-	display: inline-flex;
-	overflow-y: hidden;
-	overflow-x: hidden;
-	float: left;
-	}
+.COL900, .COL800, .COL700, .COL600, .COL500, 
+.COL450, .COL400, .COL300, .COL225, .COL200, 
+.COL100 {min-height: 1px; margin-left: 20px; word-break: break-word; display:inline; float:left;}
 
-/* STANDARD COLUMNS SIZES*/
-.ROW900 {width: 90%;}
-.COL900 {width: calc(99.99% - 19.99px);}
-.COL800 {width: calc(88.88% - 18.88px);}
-.COL700 {width: calc(77.77% - 17.77px);}
-.COL600 {width: calc(66.66% - 16.66px);}
-.COL500 {width: calc(55.55% - 15.55px);}
-.COL400 {width: calc(44.44% - 14.44px);}
-.COL300 {width: calc(33.33% - 13.33px);}
-.COL200 {width: calc(22.22% - 12.22px);}
-.COL100 {width: calc(11.11% - 11.11px);}
-.COL450 {width: calc(50% - 15px);}
-.COL225 {width: calc(25% - 12.5px);}
 
-/* THE CLASS “DEMONSTRATION” CAN BE DELETED */
-.DEMONSTRATION {
-	min-height: 50px;
-	/*margin-top: 10px;*/
-	display: inline-flex;
-	/*text-align: center;*/
-	/*justify-content: center;*/
-	/*align-items: center;*/
-	background: lightpink;
-	background: transparent;
-	}
+.BASIC-PANEL	{
+				min-height: 50px;
+				margin-top: 20px;
+				/*text-align: center;*/
+				background: gold;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				}
 
-.MOBILE-ONLY 	{display: none;}
-.DESKTOP-ONLY	{display: inline-flex;}
+/* SCREEN SIZE 0PX TO 760PX */
+@media only screen and (min-width: 1px) and (max-width: 760px) {
+.ROW900, .COL900, .COL800, .COL700, .COL600, .COL500, 
+.COL450, .COL400, .COL300, .COL225, .COL200, .COL100 {width: 100%; margin-left: 0px;}
+}
 
-/* SCREEN SIZE 1PX TO 768PX — MOBILE DEVICE */
-@media only screen and (min-width: 1px) and (max-width: 768px) {
 
-.ROW900 		{width: 100%;}
-.MOBILE-EXPAND	{width: 100%; margin-left: 0px;}
-.MOBILE-ONLY 	{display: inline-flex;}
-.DESKTOP-ONLY	{display: none;}
+/* SCREEN SIZE 760PX TO 980PX */
+@media only screen and (min-width: 760px) and (max-width: 980px) {
+	.ROW900		{width: 758px;}
+	.COL900		{width: 718px;}
+	.COL800		{width: 636px;}
+	.COL700		{width: 554px;}
+	.COL600		{width: 472px;}
+	.COL500		{width: 390px;}
+	.COL450		{width: 348px;}
+	.COL400		{width: 308px;}
+	.COL300		{width: 226px;}
+	.COL225		{width: 164px;}
+	.COL200		{width: 144px;}
+	.COL100		{width: 62px;}
+}
 
+
+/* SCREEN SIZE 980PX TO 1280PX */
+@media only screen and (min-width: 980px) and (max-width: 1280px) {
+	.ROW900		{width: 974px;}
+	.COL900		{width: 934px;}
+	.COL800		{width: 828px;}
+	.COL700		{width: 722px;}
+	.COL600		{width: 616px;}
+	.COL500		{width: 510px;}
+	.COL450		{width: 457px;}
+	.COL400		{width: 404px;}
+	.COL300		{width: 298px;}
+	.COL225		{width: 218px;}
+	.COL200		{width: 192px;}
+	.COL100		{width: 86px;}
+}
+
+
+/* SCREEN SIZE 1280PX TO 1600PX */
+@media only screen and (min-width: 1280px) and (max-width: 1600px) {
+	.ROW900		{width: 1262px;}
+	.COL900		{width: 1222px;}
+	.COL800		{width: 1084px;}
+	.COL700		{width: 946px;}
+	.COL600		{width: 808px;}
+	.COL500		{width: 670px;}
+	.COL450		{width: 601px;}
+	.COL400		{width: 532px;}
+	.COL300		{width: 394px;}
+	.COL225		{width: 290px;}
+	.COL200		{width: 256px;}
+	.COL100		{width: 118px;}
+}
+
+
+/* SCREEN SIZE 1600PX TO 1940PX */
+@media only screen and (min-width: 1600px) {
+	.ROW900		{width: 1596px;}
+	.COL900		{width: 1555px;}
+	.COL800		{width: 1380px;}
+	.COL700		{width: 1205px;}
+	.COL600		{width: 1030px;}
+	.COL500		{width: 855px;}
+	.COL450		{width: 767px;}
+	.COL400		{width: 680px;}
+	.COL300		{width: 505px;}
+	.COL225		{width: 374px;}
+	.COL200		{width: 330px;}
+	.COL100		{width: 155px;}
 }
